@@ -1,0 +1,133 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+   
+    </head>
+    <body>
+        <header>
+            <div class = "menu-container">
+                <div class ="banner">
+                    <img 
+                        class = "burger-header-img"
+                        src = "/images/header-img.png"
+                        alt = "burger-on-a-wooden-table">
+                    <div class= "title">
+                <h1>Jimmy's Diner</h1>
+                <h3>The best burgers and pizzas in town.</h3>
+            </div>
+         </div>
+</header>
+    <div class = "menu-content">
+        <div class = "menu-items-container">
+                    <img class = "food-imgs" src = "/images/pizza-unsplash.jpg" alt = "picture of mozarella pizza">
+                <div class = "menu-item">
+                    <h4>Pizza</h4>
+                    <p class ="light-grey-text">pepperoni, mushroom, marghertia, spinach and goats cheese</p>
+                    <h5> £14 </h5>
+                    </div>
+                    <div class = "add-item-btn-container">
+                    <button class ="add-item-btn" data-add-item-btn = "0">+</button>
+                     </div>
+            </div>
+            <div class = "menu-items-container">
+                <img class = "food-imgs" src = "/images/Burger.jpg" alt = "picture of hamburger">
+                    <div class = "menu-item">
+                     <h4>Hamburger</h4>
+                     <p class = "light-grey-text">beef, beef and bacon, veggie supreme</p>
+                     <h5> £12 </h5>
+                         </div>
+                         <div class = "add-item-btn-container">
+                     <button class ="add-item-btn" data-add-item-btn = "1">+</button>
+                 </div>
+                 </div>
+                    <div class = "menu-items-container">
+                    <img class = "food-imgs" src = "/images/beer.png" alt = "pint of beer">
+                             <div class = "menu-item">
+                                 <h4>Beer</h4>
+                                <p class = "light-grey-text">pale, ruby, stout, sours</p>
+                                <h5> £6 </h5>
+                                    </div>
+                                    <div class = "add-item-btn-container">
+                                <button class ="add-item-btn" data-add-item-btn = "2">+</button>
+                        </div>
+                    </div>
+                     <div class = "menu-items-container">
+                    <img class = "food-imgs" src = "/images/milkshake.jpg" alt = "pint of beer">
+                             <div class = "menu-item">
+                                 <h4>Milkshake</h4>
+                                <p class = "light-grey-text">ferrero rocher wonder, cookies & cream, rainbow sprinkles</p>
+                                <h5> £8 </h5>
+                                    </div>
+                                    <div class = "add-item-btn-container">
+                                <button class ="add-item-btn" data-add-item-btn = "3">+</button>
+                                </div>
+                                </div>
+                    </div>
+                <section class = "order">
+                </section>
+                <section id = "card-modal">
+                    <div id = "modal-wrapper">
+                    <h2> Enter your card details</h2>
+                    <form id = "payment-form">
+                <input 
+                    type="text" 
+                    id="name-input" 
+                    name="name-input"
+                    placeholder="Enter your name"
+                    required
+                    > 
+                     <input
+                        type= "text"
+                        id= "cardDetails"
+                        name="cardDetails"
+                        placeholder="Enter card number"
+                        required                  
+                        >
+                            <input 
+                                type = "text"
+                                id = "CVV"
+                                name= "CVV"
+                                placeholder = "Enter CVV"
+                                required
+                                >      
+                    </form>
+                        <button id = "pay-btn" type ="submit">Pay</button>
+                        </div>
+                </section>
+                <section id = "thanks-message">
+                </section>
+                <section id="review-section">
+                    <h2>Customer Reviews</h2>
+                    <div id="reviews-list"></div>
+                </section>
+                <div id = "review-form-container">
+                <form id="review-form">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" required>
+                    
+                    <label for="rating">Rating:</label>
+                    <select id="rating" required>
+                        <option value="5">5 stars</option>
+                          <option value="4">4 stars</option>
+                            <option value="3">3 stars</option>
+                              <option value="2">2 stars</option>
+                                <option value="1">1 stars</option>
+                    </select>
+                    <label for="review">Review:</label>
+                    <textarea id="review" required></textarea>
+                    
+                    <button id = "submit-review-btn" type="submit">Submit Review</button>
+                    </div>
+                </form>
+                <div id="thank-you-message" style="display: none;">
+                     Thank you for your review!
+                </div>
+	     <script src="index.js" type = "module"></script>
+    </body>
+</html>
+
+
+
